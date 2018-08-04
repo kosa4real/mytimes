@@ -1,0 +1,32 @@
+body{
+  color:black;
+
+}
+header {
+  display: flex;
+  justify-content: space-between  ;
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
+  align-items: center;
+  border: 1px solid black;
+  padding: 10px 20px;
+}
+header p{
+  display: inline;
+  color: MediumAquamarine;
+  position: relative;
+  bottom: 25px;
+  margin-left: 10px;
+}
+nav{
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  list-style-type: none;
+}
+nav ul li a{
+  color: black;
+  margin-left: 18px;
+}
