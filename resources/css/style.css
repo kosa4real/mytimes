@@ -1,16 +1,22 @@
-body{
-  color:black;
-
+*{
+  padding: 0px;
+  margin: 0px;
 }
 header {
   display: flex;
-  justify-content: space-between  ;
+  justify-content: space-between;
+  position: fixed;
+  top:0px;
+  width: 100%;
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
   align-items: center;
   border: 1px solid black;
   padding: 10px 20px;
+  z-index: 2;
+  background-color: white;
+
 }
 header p{
   display: inline;
@@ -20,7 +26,7 @@ header p{
   margin-left: 10px;
 }
 nav{
-  margin-right: 20px;
+  margin-right: 60px;
 }
 nav ul li{
   display: inline-block;
@@ -29,4 +35,95 @@ nav ul li{
 nav ul li a{
   color: black;
   margin-left: 18px;
+}
+
+/* Main style begins here */
+
+.main {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: 100px;
+  justify-content: space-between;
+  border: 1px solid black;
+  margin: 10px 30px;
+
+}
+.column {
+  display: flex;
+  flex-direction: column;
+
+}
+.column.large {
+  width: 630px;
+  border: 5px solid green;
+
+}
+.column.medium {
+  width: 300px;
+  border: 5px solid green;
+
+}
+.column.small {
+  width: 240px;
+  border: 5px solid green;
+}
+  section {
+    border: 3px solid red;
+    padding: 10px 0px;
+    align-content: space-around;
+
+  }
+
+.lead.story{
+  border: 4px solid gray;
+}
+.support.story{
+  border: 3px solid red;
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+
+}
+.img {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+}
+/* lARGE COLUMN  */
+.column.large div.img{
+  background-image: url("../images/img-story-main.png");
+  height: 250px;;
+}
+.column.large div.img.story-2{
+  background-image: url("../images/img-story-2.png");
+  height: 250px;;
+}
+.column.large div.img.story-3{
+  background-image: url("../images/img-story-3.png");
+  height: 250px;;
+}
+/* END OF LARGE COLUMNG */
+/* MEDIUM COLUMN */
+.column.medium div.img.story-1{
+  background-image: url("../images/img-story-1.png");
+  height: 250px;;
+}
+
+
+/* SMALL COLUMN */
+.column.small div.img.newsbite{
+  background-image: url("../images/img-news-bite.png");
+  height: 250px;;
+}
+/* END OF SMALL COLUMN */
+section p {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+
+.img.mainstory{
+  font-size: 40px;
 }
