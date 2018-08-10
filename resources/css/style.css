@@ -147,7 +147,40 @@ section p {
   font-size: 17px;
   color: black;
 }
-
 .img.mainstory{
   font-size: 40px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 100px;
+  align-items: center;
+  justify-content: center;
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+  height: 350px;
+
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-basis: auto;
+}
+footer .lowgo{
+  display: inline;
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+footer nav {
+  margin-top: 2px;
+  margin-left: 13px;
+}
+footer .copyright {
+  margin-top: 15px;
 }
